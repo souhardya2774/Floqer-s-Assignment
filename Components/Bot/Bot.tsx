@@ -6,7 +6,6 @@ const Bot = ({ isOpen, onClose }:{
     isOpen: boolean,
     onClose: () => void
 }) => {
-  console.log(isOpen,onClose);
     return (
       <>
         {/* Overlay */}

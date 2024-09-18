@@ -91,7 +91,7 @@ function Chat() {
     <div className="flex flex-col h-full overflow-scroll">
         {
         (messages && messages.length && messages[messages.length-1].message === "Thinking...")?
-            <div className="fixed w-full bg-violet-600/75 text-white text-lg font-bold p-2 z-10">
+            <div className="fixed w-full text-center bg-violet-600/75 text-white text-lg font-bold p-2 z-10">
                 Sorry, sometimes it can take 1-2 minutes complete the query. Please bear with us 🥺. 
             </div>
         :<></>
@@ -122,7 +122,7 @@ function Chat() {
             placeholder="Ask a Question..."
             value={input}
             onChange={(e)=>setInput(e.target.value)}
-            className="bg-white"
+            className="bg-white text-lg"
             />
             <Button
             type="submit"
