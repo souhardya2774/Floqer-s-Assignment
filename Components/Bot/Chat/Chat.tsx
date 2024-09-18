@@ -121,9 +121,7 @@ function Chat() {
             />
             <Button
             type="submit"
-            disabled={!input || isPending}
-            className={!(!input || isPending)?"bg-violet-600 text-black":""}
-            >{
+            disabled={!input || isPending}>{
                 isPending?(
                     <Loader2Icon className="animate-spin text-indigo-600"/>
                 ):("Ask")
