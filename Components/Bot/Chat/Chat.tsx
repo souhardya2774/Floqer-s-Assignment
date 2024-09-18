@@ -90,11 +90,11 @@ function Chat() {
   return (
     <div className="flex flex-col h-full overflow-scroll">
         {
-        (messages && messages.length && messages[messages.length-1].message === "Thinking...")
-        &&
-        <div className="fixed w-full bg-violet-950 text-white text-xl font-bold">
-            Sorry, sometimes it can take 1-2 minutes complete the query. Please bear with us 🥺. 
-        </div>
+        (messages && messages.length && messages[messages.length-1].message === "Thinking...")?
+            <div className="fixed w-full bg-violet-600/75 text-white text-lg font-bold p-2 z-10">
+                Sorry, sometimes it can take 1-2 minutes complete the query. Please bear with us 🥺. 
+            </div>
+        :<></>
         }
         <div className="flex-1 w-full">
                 <div className="p-5">
@@ -103,7 +103,7 @@ function Chat() {
                         (
                             <ChatMessage key="placeholder" message={{
                                 role: "ai",
-                                message: "Ask me anything about the dataset! It may take 1-2 minutes first time, please stick us 🥺!"
+                                message: "Ask me anything about the dataset! It may take 1-2 minutes first time, please stick with us 🥺!"
                             }}/>
                         )
                     }
