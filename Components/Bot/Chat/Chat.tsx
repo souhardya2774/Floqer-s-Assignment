@@ -7,10 +7,8 @@ import { Loader2Icon } from "lucide-react";
 import ChatMessage from "./ChatMessage";
 
 const askQuestion=async(query:string)=>{
-    const API_URL="query";
-
     try {
-        const response=await fetch(API_URL,{
+        const response=await fetch("https://floqer-s-assignment-backend.onrender.com/query",{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
