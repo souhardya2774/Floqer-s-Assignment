@@ -98,7 +98,7 @@ function Chat() {
                         (
                             <ChatMessage key="placeholder" message={{
                                 role: "ai",
-                                message: "Ask me anything about the dataset! Nothing else, sorry!"
+                                message: "Ask me anything about the dataset! It may take 1-2 minutes first time, please stick us 🥺!"
                             }}/>
                         )
                     }
