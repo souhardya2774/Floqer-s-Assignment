@@ -90,7 +90,7 @@ function Chat() {
   return (
     <div className="flex flex-col h-full overflow-scroll">
         {
-        (messages[messages.length-1].message === "Thinking...")
+        (messages && messages.length && messages[messages.length-1].message === "Thinking...")
         &&
         <div className="fixed w-full bg-violet-950 text-white text-xl font-bold">
             Sorry, sometimes it can take 1-2 minutes complete the query. Please bear with us 🥺. 
